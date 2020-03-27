@@ -1,0 +1,21 @@
+public class MsgLblFourBtn {
+    public string x{get;set;}
+    
+    
+    public PageReference firstBtn() {
+        x ='good morning fraaandss';
+        return null;
+    }
+    public PageReference secondBtn() {
+        x ='good afternoon fraaandss';
+        return null;
+    }
+    public PageReference thirdBtn() {
+        x ='good evening fraaandss';
+        return null;
+    }
+    public PageReference fourthBtn() {
+        x ='good night fraaandss';
+        return null;
+    }
+}
