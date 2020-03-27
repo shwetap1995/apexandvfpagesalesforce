@@ -1,0 +1,10 @@
+public class ShowMsgInLbl {
+      public String x {get; set;}
+     
+    public PageReference  showMessage(){
+        x = 'hello world';
+        system.debug(x);
+        return null;
+    }
+
+}
