@@ -1,0 +1,11 @@
+<apex:page controller="DropdownforDay" >
+    <apex:form>
+        <apex:pageBlock>
+            <apex:pageBlockSection>
+                <apex:selectList value="{!selectlist}" multiselect="false" size="1">
+                    <apex:selectOptions value="{!selectedday}"/>
+                </apex:selectList>
+            </apex:pageBlockSection>
+        </apex:pageBlock>
+    </apex:form>
+</apex:page>
