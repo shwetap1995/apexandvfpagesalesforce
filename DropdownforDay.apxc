@@ -1,0 +1,15 @@
+public class DropdownforDay {
+    public string selectlist{get;set;}
+    public List<SelectOption> selectedday{get;set;}
+    public DropdownforDay(){
+        selectedday=new List<SelectOption>();
+        selectedday.add(new SelectOption('','None') );
+        selectedday.add(new SelectOption('Sunday','Sunday') );
+        selectedday.add(new SelectOption('Monday','Monday') );
+        selectedday.add(new SelectOption('Tuesday','Tuesday') );
+        selectedday.add(new SelectOption('Wednesday','Wednesday') );
+        selectedday.add(new SelectOption('Thursday','Thursday') );
+        selectedday.add(new SelectOption('Friday','Friday') );
+        selectedday.add(new SelectOption('Saturday','Saturday') );
+    }
+}
