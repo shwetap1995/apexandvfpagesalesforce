@@ -1,0 +1,13 @@
+<apex:page controller="MsgLblFourBtn" >
+    <apex:form>
+        <apex:pageBlock>
+            <apex:pageBlockSection>
+                <apex:commandButton value="Good Morning" action="{!firstBtn}"/>
+                <apex:commandButton value="Good Afternoon" action="{!secondBtn}"/>
+                <apex:commandButton value="Good Evening" action="{!thirdBtn}"/>
+                <apex:commandButton value="Good Night" action="{!fourthBtn}"/>
+            </apex:pageBlockSection>
+            <apex:outputText>{!x}</apex:outputText>
+        </apex:pageBlock>
+    </apex:form>
+</apex:page>
