@@ -1,0 +1,18 @@
+<apex:page controller="DropdownforDay" >
+    <apex:form id="page1" >
+        <apex:pageBlock >
+            <apex:pageBlockSection >
+                <!-- <apex:commandbutton value="Show Values" action="{!show}"/>-->
+                <apex:selectList value="{!selectlist}" multiselect="false" size="1">
+                    <apex:selectOptions value="{!selectedday}"/>
+                    <apex:actionSupport event="onchange" reRender="page1" action="{!show}"/>
+                </apex:selectList>
+                
+            </apex:pageBlockSection>
+            
+        </apex:pageBlock>
+        <apex:pageBlock title="selected values">
+            <apex:outputText value="{!msg}" style="color:red"/>   
+        </apex:pageBlock>
+    </apex:form>
+</apex:page>
